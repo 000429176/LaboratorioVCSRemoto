@@ -13,4 +13,6 @@ d=int(input("Ingrese d: "))
 print("El producto de los dos numeros es: " + str(a+c))
 print("El doble del primer numero es: " + str(a*2))
 
+print("El cuadrado de b es: " + str(b**2))
+print("La raiz cuadrada de d es: " + str(d**(1/2)))
 
