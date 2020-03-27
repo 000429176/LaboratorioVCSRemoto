@@ -24,3 +24,7 @@ print("El numero invertido es: " + str(int(d1)) + str(int(d2)) + str(int(d3)) + 
 
 n=int(input("Ingrese el numero de filas: "))
 
+fila=1
+
+for i in range(1, n+1, 1):
+    fila=(fila*10)+i
