@@ -72,3 +72,34 @@ elif ((nf>=3.0) and (nf<=4.5)):
 elif nf>4.5:
     print("La nota final es: " + str(nf))
     print("Felicitaciones, aprobó")
+    
+#%% Punto 7
+
+#Ejemplos de los tipos de funciones en Python
+
+#Función Aritmética
+
+n=int(input("Ingrese un numero: "))
+va=abs(n)
+print(va)
+
+#funcion de cadena
+
+c=input("Ingrese una frase: ")
+
+Lista = c.split()
+
+print (Lista)
+
+#Función importada
+
+from math import pi
+x=pi
+print(x)
+
+#Función definida por uno
+n=int(input("Ingrese un numero: "))
+a=int(input("Ingrese un numero: "))
+def suma(n,a):
+    print(n + a)
+suma(n,a)
