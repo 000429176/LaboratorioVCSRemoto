@@ -24,9 +24,24 @@ print("El numero invertido es: " + str(int(d1)) + str(int(d2)) + str(int(d3)) + 
 
 n=int(input("Ingrese el numero de filas: "))
 
-fila=1
+fila=0
 
-for i in range(2, n+1, 1):
+for i in range(1, n+1, 1):
     fila=(fila*10)+i
 
 print("La fila es: " + str(fila))
+
+
+#%% Punto 1
+
+#Variables que representan las coordenadas
+print("Ingrese los dos valores de la primera coordenada")
+x1 = int(input ("Ingrese el valor de X1: "))
+y1 = int(input ("Ingrese el valor de Y1: "))
+print("Ingrese los dos valores de la segunda coordenada")
+x2 = int(input ("Ingrese el valor de X2: "))
+y2 = int(input ("Ingrese el valor de Y2: "))
+
+ 
+
+print("La distancia euclidiana es: " + str((((x2-x1)**2)+((y2-y1)**2))**(1/2)))
