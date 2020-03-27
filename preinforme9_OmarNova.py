@@ -103,3 +103,37 @@ a=int(input("Ingrese un numero: "))
 def suma(n,a):
     print(n + a)
 suma(n,a)
+
+#%% Punto 6
+
+#Ejemplo 6.1
+def launch_missiles():
+    print("Missiles launched!")
+    
+launch_missiles()
+
+ 
+
+#%%
+#Ejemplo 6.2
+def square (x):
+    x_squared = x**2
+    return x_squared
+number=2
+number_squared=square (number)
+print(number, "al cuadrado es", number_squared)
+
+ 
+
+#%%
+#Ejemplo 6.3
+def even_or_odd(n):
+    if n % 2 == 0:
+        print("even")
+        return
+    print("odd")
+even_or_odd(4)
+
+ 
+
+even_or_odd(5)
