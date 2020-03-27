@@ -22,3 +22,5 @@ print("El numero invertido es: " + str(int(d1)) + str(int(d2)) + str(int(d3)) + 
 
 #%% Punto 4
 
+n=int(input("Ingrese el numero de filas: "))
+
