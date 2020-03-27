@@ -45,3 +45,30 @@ y2 = int(input ("Ingrese el valor de Y2: "))
  
 
 print("La distancia euclidiana es: " + str((((x2-x1)**2)+((y2-y1)**2))**(1/2)))
+
+#%% Punto 3
+
+n1 = float(input ("Ingrese el valor de la primera nota: "))
+n2 = float(input ("Ingrese el valor de la segunda nota: "))
+n3 = float(input ("Ingrese el valor de la tercera nota: "))
+n4 = float(input ("Ingrese el valor de la cuarta nota: "))
+n5 = float(input ("Ingrese el valor de la quinta nota: "))
+
+ 
+
+nf = ((n1*0.15)+(n2*0.20)+(n3*0.15)+(n4*0.30)+(n5*0.20))
+
+ 
+
+if nf<2:
+    print("La nota final es: " + str(nf))
+    print("No podrá habilitar")
+elif ((nf>=2.0) and (nf<3.0)):
+    print("La nota final es: " + str(nf))
+    print("Ha reprobado")
+elif ((nf>=3.0) and (nf<=4.5)):
+    print("La nota final es: " + str(nf))
+    print("Ha aprobado")
+elif nf>4.5:
+    print("La nota final es: " + str(nf))
+    print("Felicitaciones, aprobó")
