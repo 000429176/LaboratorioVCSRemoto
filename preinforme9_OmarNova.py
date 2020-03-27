@@ -18,4 +18,4 @@ d2=((d*100)%10)//1
 d3=((d*10)%10)//1
 d4=n//1000
 
-print("El numero invertido es: " + str(d1) + str(d2) + str(d3) + str(d4))
+print("El numero invertido es: " + str(int(d1)) + str(int(d2)) + str(int(d3)) + str(int(d4)))
