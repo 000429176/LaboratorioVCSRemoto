@@ -31,6 +31,15 @@ def difMayorMenor(utilidad):
     dif = mayor-menor
     return dif
 
+def mediana():
+    cant=len(utilidad)
+    orden=0
+    for j in range(0,cant):
+        for i in range(0,cant-1):
+            if utilidad[i]>utilidad[i+1]:
+                orden=utilidad[i]
+                utilidad[i]=utilidad[i+1]
+                utilidad[i+1] = orden
 
 
 
