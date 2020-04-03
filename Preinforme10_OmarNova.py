@@ -74,6 +74,15 @@ def deficitCOP(utilidad):
     deficit = utilidad[cant-2] - utilidad[cant-1]
     return deficit
 
+def porcentajedeficit(utilidad):
+    cant = len(utilidad)
+    for i in range(0, cant-1):
+        d = utilidad[i] - utilidad[i+1]
+        deficit = (d*100)/utilidad[i]
+        print(deficit)
+
+
+
 #--------------------------------Principal------------------------------#
 utilidad=utilidad()
 
@@ -81,5 +90,6 @@ print("La diferencia del promedio de los ultimos años y los primeros años es: 
 print("La diferencia entre las utilidades operaciones del año con mayor utilidad y el de menor utilidad es: " + str(difMayorMenor(utilidad)))
 print("El proncejatje de cada año es: "), porcentajeAcum(utilidad)
 print("El deficit del año 2017 con respecto al año anterior es de " + str(deficitCOP(utilidad)) + " millones de COP")
+print("El porcentaje de deficit de cada año es: "), porcentajedeficit(utilidad)
 print("La mediana es: " + str(mediana(utilidad)))
 mediaMediana(utilidad)
