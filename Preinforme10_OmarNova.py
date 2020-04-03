@@ -57,6 +57,17 @@ def mediaMediana(utilidad):
     dif = median - prom
     print("La mediana es " + str(median) + " y el promedio es " + str(prom) + "; la diferencia de la mediana y promedio es: " + str(dif))
 
+def porcentajeAcum(utilidad):
+    s = 0
+    porc = 0
+    cant = len(utilidad)
+    for i in range(0, cant):
+        s = s + utilidad[i]
+    l = 0
+    for i in range(0, cant):
+        porc = (utilidad[i]*100)/s
+        l = l + porc
+        print(porc)
 
 
 
@@ -66,3 +77,4 @@ print("La diferencia del promedio de los ultimos años y los primeros años es: 
 print("La diferencia entre las utilidades operaciones del año con mayor utilidad y el de menor utilidad es: " + str(difMayorMenor(utilidad)))
 print("La mediana es: " + str(mediana(utilidad)))
 mediaMediana(utilidad)
+porcentajeAcum(utilidad)
