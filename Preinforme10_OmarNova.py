@@ -69,12 +69,17 @@ def porcentajeAcum(utilidad):
         l = l + porc
         print(porc)
 
+def deficitCOP(utilidad):
+    cant=len(utilidad)
+    deficit = utilidad[cant-2] - utilidad[cant-1]
+    return deficit
 
-
+#--------------------------------Principal------------------------------#
 utilidad=utilidad()
 
 print("La diferencia del promedio de los ultimos años y los primeros años es: " + str(difMediaUltPri(utilidad)))
 print("La diferencia entre las utilidades operaciones del año con mayor utilidad y el de menor utilidad es: " + str(difMayorMenor(utilidad)))
+print("El proncejatje de cada año es: "), porcentajeAcum(utilidad)
+print("El deficit del año 2017 con respecto al año anterior es de " + str(deficitCOP(utilidad)) + " millones de COP")
 print("La mediana es: " + str(mediana(utilidad)))
 mediaMediana(utilidad)
-porcentajeAcum(utilidad)
