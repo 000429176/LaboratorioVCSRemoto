@@ -18,8 +18,18 @@ def difMediaUltPri(utilidad):
     dif = prom1 - prom2
     return dif
 
-
-    
+def difMayorMenor(utilidad):
+    mayor = utilidad[0]
+    menor = utilidad[0]
+    cant = len(utilidad)
+    for i in range(0,cant):
+        if mayor<utilidad[i] :
+            mayor=utilidad[i]
+    for i in range(0,cant):
+        if menor>utilidad[i]:
+            menor=utilidad[i]
+    dif = mayor-menor
+    return dif
 
 
 
@@ -27,3 +37,4 @@ def difMediaUltPri(utilidad):
 
 utilidad=utilidad()
 print("La diferencia del promedio de los ultimos años y los primeros años es: " + str(difMediaUltPri(utilidad)))
+print("La diferencia entre las utilidades operaciones del año con mayor utilidad y el de menor utilidad es: " + str(difMayorMenor(utilidad)))
