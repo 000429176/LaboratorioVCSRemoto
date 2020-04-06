@@ -113,10 +113,18 @@ object preinforme10L_OmarNova {
     }
   }
   
+  //---------------------------------------------------------------Principal----------------------------------------------------------------//
   
+  var Utility = Utilidad()            
+  println("La diferencia del promedio de los ultimos años y los primeros años es: " + difMediaUltPri(Utility))
+	println("La diferencia entre las utilidades operaciones del año con mayor utilidad y el de menor utilidad es: " + difMayorMenor(Utility))
+	porcentajeAcum(Utility)
+	println("El deficit del año 2017 con respecto al año anterior es de " + deficitCOP(Utility) + " millones de COP")
+	porcentajedeficit(Utility)
+	println("La mediana es: " + mediana(Utility))
+	mediaMediana(Utility)
   
-  
-  
+
 }
 
   
