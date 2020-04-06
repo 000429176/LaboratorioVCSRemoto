@@ -73,6 +73,22 @@ object preinforme10L_OmarNova {
     println("La mediana es " + Mediana + " y el promedio es " + prom + "; la diferencia entre la mediana y la media es " + dif)  
   }
   
+  //Función que cálcula el porcentaje que aporta cada año a la utilidad operacional acumulada. Se cálcula la utilidad acumulada mediante un for, sumando cada uno de los valores en cada iteración. Por último, mediante una regla de 3 sencilla, se cálcula el porcentaje que cada año le aporta al acumulado.
+  
+    def porcentajeAcum(Utility : Array[Int]):Unit = {
+    var s = 0
+    var porc = (0: Float)
+    val cant = Utility.length 
+    for (i <- 0 to cant-1) {
+      s += Utility(i)  
+    }
+    var a = 2007
+    for (i <- 0 to cant-1) {
+      porc = ((Utility(i)*100):Float)/(s:Float)
+      a += 1
+      println("El porcentaje que aporta el año " + a + " al acumulado es " + porc + "%")
+    }
+  }
   
   
   
