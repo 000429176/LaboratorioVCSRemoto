@@ -90,6 +90,13 @@ object preinforme10L_OmarNova {
     }
   }
   
+  //Función que cálcula el déficit del año 2017 comparado con el año anterior, es decir, 2016. Estos dos años son los últimos, por lo que simplemente se realiza un lenght para obtener el numero de elementos que contiene el Array y posteriormente restar los últimos dos.
+  
+  def deficitCOP(Utility : Array[Int]):Int = {
+    val cant = Utility.length
+    val deficit = Utility(cant-2) - Utility(cant-1)
+    return deficit
+  }
   
   
   
