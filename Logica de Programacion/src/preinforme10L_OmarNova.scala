@@ -35,6 +35,31 @@ object preinforme10L_OmarNova {
   	return dif2
   }                                             
   
+  // Función para calcular la mediana. Primero se ordena el Array de menor a mayor utilizando el método de ordenamiento burbuja para posteriormente calcular la mediana, siendo el valor que divide en dos partes iguales el Array. 
+  
+  def mediana(Utility : Array[Int]): Float = {
+    val cant = Utility.length
+    var orden = 0
+    for (x <- 0 to cant-1) {
+        for (i <- 0 to cant-2) {
+            if (Utility(i) > Utility(i+1)) {
+                orden = Utility(i)
+                Utility(i)= Utility(i+1)
+                Utility(i+1) = orden
+            }
+        }
+    }
+    val mitad = cant/2
+    if (cant%2==0) {
+        var median = ((Utility(mitad)+Utility(mitad-1)):Float)/2
+        return median
+    } else {
+        var median = Utility(mitad+1)
+        return median
+    }
+  }
+  
+  
   
 
   
