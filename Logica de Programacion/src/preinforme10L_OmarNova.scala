@@ -59,8 +59,24 @@ object preinforme10L_OmarNova {
     }
   }
   
+  //Función que cálcula la media mediante un for, sumando todos los valores del Array y posteriormente dividiéndolo entre el número de valores que contiene. Con el cálculo de la mediana de la función anterior, se cálcula la diferencia entre la mediana y la media.
+  
+  def mediaMediana(Utility : Array[Int]): Unit = {
+    val Mediana = mediana(Utility)
+    val cant = Utility.length
+    var s = 0
+    for (i <- 0 to cant-1) {
+      s += Utility(i)
+    }
+    val prom = (s: Float)/cant
+    val dif = Mediana - prom
+    println("La mediana es " + Mediana + " y el promedio es " + prom + "; la diferencia entre la mediana y la media es " + dif)  
+  }
   
   
-
+  
+  
   
 }
+
+  
