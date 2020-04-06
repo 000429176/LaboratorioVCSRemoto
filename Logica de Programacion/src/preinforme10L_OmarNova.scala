@@ -98,6 +98,23 @@ object preinforme10L_OmarNova {
     return deficit
   }
   
+  //Función que cálcula el porcentaje de déficit de cada año, siendo negativo en caso de que no exista déficit. Para la cual se utiliza un ciclo for que mediante una regla de 3 sencilla calcule el porcentaje de cada año y lo imprima.
+  
+  def porcentajedeficit(Utility : Array[Int]): Unit = {
+    val cant = Utility.length
+    var d = 0 : Float
+    var defic = 0: Float
+    var año = 2008
+    for (i <- 0 to cant-2) {
+      d = Utility(i) - Utility(i+1)
+      defic =  ((d*100)/Utility(i)): Float
+      año += 1
+      println("El porcentaje de deficit para el año " + año + " es " + defic + "%")
+    }
+  }
+  
+  
+  
   
   
 }
