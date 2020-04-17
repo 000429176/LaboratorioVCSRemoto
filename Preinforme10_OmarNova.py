@@ -12,7 +12,7 @@ def utilidad():
     return utilidad
 
 def difMediaUltPri(utilidad):
-    cant=len(utilidad)
+    cant = len(utilidad)
     prom1 = (utilidad[cant-1] + utilidad[cant-2])/2
     prom2 = (utilidad[0] + utilidad[1])/2
     dif = prom1 - prom2
@@ -25,7 +25,6 @@ def difMayorMenor(utilidad):
     for i in range(0,cant):
         if mayor<utilidad[i] :
             mayor=utilidad[i]
-    for i in range(0,cant):
         if menor>utilidad[i]:
             menor=utilidad[i]
     dif = mayor-menor
