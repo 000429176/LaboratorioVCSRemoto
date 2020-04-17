@@ -106,5 +106,35 @@ object prueba extends App {
   println("El promedio del punto de rocío de Bucaramanga es: "+ puntoRocío(clima, 1))
   println("El promedio del punto de rocío de Bogotá es: " + puntoRocío(clima, 2))
   
+
+  val rows = 2
+  val columns = 2
+  val array7 = Array.ofDim[Int](rows,columns)
+  array7(0)(0) = 1
+  array7(0)(1) = 2
+  array7(1)(0) = 2
+  array7(1)(1) = 5
+  println(array7)
+  var a: Float = 0
+  var c: Float = 0
+  for (i <- 0 to 1; j <- 0 to 1) {
+        a += array7(i)(j)
+        c += 1
+        println(a/c)}
+  val arr = Array.ofDim[Int](3,3,3)
+  arr(0)(0)(0) = 1
+  arr(0)(0)(1) = 2
+  arr(0)(0)(2) = 3
+  arr(0)(1)(0) = 7
+  arr(0)(1)(1) = 8
+  arr(0)(1)(2) = 9
+  arr(0)(2)(0) = 21
+  arr(0)(2)(1) = 23
+  arr(0)(2)(2) = 24
+  val d = arr(0)(0)(0)*arr(0)(1)(0)*arr(0)(2)(0)
+  println(d)
+
+
+
   
 }
