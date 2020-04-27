@@ -168,5 +168,45 @@ println("\n")
 println("La desviación estándar de las temperaturas superiores a la media es: " + desviacionEstandar(tempmediaMayor) + " y la desviación de los más bajos de la media es " + desviacionEstandar(tempmediaMenor) + "\n")
 
 val desMayorMenorTemp = List(desviacionEstandar(tempmediaMayor) , desviacionEstandar(tempmediaMenor))
-println("La media de la desviación estándar de la temperatura mayor y menor que el promedio es: " + media(desMayorMenorTemp))        
+println("La media de la desviación estándar de la temperatura mayor y menor que el promedio es: " + media(desMayorMenorTemp))   
+
+
+
+
+
+// PUNTO 1
+
+// Importación de paquetes para trabajar con listas mutables e inmutables
+import scala.collection.mutable.ListBuffer
+import scala.collection.immutable._
+
+//Creación de lista mutable de enteros, que se llena con el resultado de multiplicar por dos el número de cada vuelta
+
+
+  def main(args: Array[String]) {
+    val numbers = ListBuffer[Int]()
+    for (i <- 0 to 10) {
+      numbers.append(i * 2)
+    }
+    println(numbers)
+  }
+
+//Creación de lista inmutable de enteros, para luego sumar sus valores interiores
+
+    def main(args: Array[String]) {
+      val numbers2: List[Int] = List(10, 20, 30, 40, 50)
+      var suma = numbers2.sum
+      println(suma/numbers2.length)
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
