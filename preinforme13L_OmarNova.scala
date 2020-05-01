@@ -1,4 +1,24 @@
 object preinforme13 extends App {
+  
+    //----Sol. Parte B. punto 1----//
+
+  //La función studentScores imprime las llaves y valores del diccionario scores
+  //También imprime el primer valor de la lista, de cada llave
+  def studentScores(): Unit = {
+    val scores = Map("Omar" -> List(5.0, 4.0),
+      "Silvia" -> List(4.0, 4.0),
+      "Juanito" -> List(1.0, 4.9))
+      for (i <- scores) {
+        println("Las notas de primer y segundo parcial del alumno: "+ i)
+      }
+    println("La nota del primer parcial de Omar es: " + (scores("Omar")(0)))
+    println("La nota del primer parcial de Silvia es: " + (scores("Silvia")(0)))
+    println("La nota del primer parcial de Juanito es: " + (scores("Juanito")(0)))
+  }
+
+  //----Sol. Parte B. punto 2----//
+
+
   //La función clima devuelve un diccionario donde cada llave es una ciudad y los valores dentro de ellas son una lista de listas.
   //Las listas representan la temperatura, vapor de agua y vapor de agua saturado, respectivamente.
   def climate():Map[String,List[List[Double]]] = {
